@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stream</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="searchBox" class="center">
+        <input id="search" placeholder="Enter search term" type="text">
+        <select onchange="onProviderChange()" id="provider"></select>
+        <select id="category"></select>
+        <select id="resultCount">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="40">40</option>
+            <option value="60">60</option>
+            <option value="80">80</option>
+        </select>
+        <button id="submitButton" onclick="onSubmitPressed()" type="submit">Search</button>
+    </div>
+
+    <div id="content" class="center"></div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
