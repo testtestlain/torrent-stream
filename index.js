@@ -25,8 +25,8 @@ function setProviders(data) {
 }
 
 function setContent(data) {
-  if (typeof data === 'string' || data instanceof String) {
-    content.innerHTML = data;
+  if (data.message !== undefined) {
+    content.innerHTML = data.message;
     return;
   }
   content.innerHTML = data
