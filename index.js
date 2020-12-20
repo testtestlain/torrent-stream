@@ -25,6 +25,10 @@ function setProviders(data) {
 }
 
 function setContent(data) {
+  if (typeof myVar === 'string' || myVar instanceof String) {
+    content.innerHTML = data;
+    return;
+  }
   content.innerHTML = data
     .map(
       (d) =>
